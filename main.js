@@ -70,3 +70,16 @@ import "swiper/css/navigation";
   createRating();
   createVisualizerDots();
 })();
+
+window.addEventListener("scroll", () => {
+  const { pageYOffset } = window;
+  if (pageYOffset > 0) {
+    document
+      .querySelector(".main-header")
+      .classList.add("border-b", "border-[#ededed]");
+  } else {
+    document
+      .querySelector(".main-header")
+      .classList.remove("border-b", "border-[#ededed]");
+  }
+});

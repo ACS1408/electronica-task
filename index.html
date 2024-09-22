@@ -37,7 +37,7 @@
 <body>
   <a href="#main-content" class="sr-only" aria-label="skip to main content">Skip to main content</a>
   <!-- Landmark: Header -->
-  <header class="main-header h-[85px] py-5 flex items-center">
+  <header class="main-header sticky top-0 left-0 w-full z-[1025] bg-white h-[85px] py-5 flex items-center">
     <div
       class="main-header__mobilesearch h-[85px] transition-transform duration-300 ease-in-out lg:hidden bg-white py-5 absolute top-0 left-0 w-full z-[1024] -translate-y-full">
       <div class="container">
@@ -1065,6 +1065,9 @@
         </form>
       </div>
     </section>
+
+    <!-- Tailwind CSS dynamic classes -->
+    <div class="border-b border-[#ededed]"></div>
   </main>
   <!-- Landmark: Footer -->
   <footer class="main-footer overflow-x-hidden">
