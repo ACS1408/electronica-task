@@ -1,0 +1,1169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="styles/css/globals.min.css">
+
+  <title>ELECTRONICA | HOME</title>
+</head>
+
+<body>
+  <!-- Landmark: Header -->
+  <header class="main-header h-[85px] py-5 flex items-center">
+    <div
+      class="main-header__mobilesearch h-[85px] transition-transform duration-300 ease-in-out lg:hidden bg-white py-5 absolute top-0 left-0 w-full z-[1024] -translate-y-full">
+      <div class="container">
+        <form action="" class="search-form relative">
+          <i data-lucide="search" class="absolute top-1/2 left-5 -translate-y-1/2 size-5" role="presentation"></i>
+          <input type="search" class="search-input bg-grey rounded-full h-11 w-full indent-12"
+            aria-label="Search for tv, mobile, gadgets, etc." placeholder="Search for tv, mobile, gadgets">
+          <button class="search-close absolute top-1/2 right-5 -translate-y-1/2 " aria-label="close searchbar">
+            <i data-lucide="x" class="size-6" role="presentation"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container relative">
+      <div class="flex items-center gap-8 devices:pr-14">
+        <div class="main-header__logo">
+          <a href="/" aria-label="link to homepage">
+            <img src="/images/main-logo.png" alt="electronica logo" class="max-w-[200px] xxs:max-w-[150px]">
+          </a>
+        </div>
+        <div class="main-header__search flex-1 lg:block hidden">
+          <form action="" class="search-form relative">
+            <i data-lucide="search" class="absolute top-1/2 left-5 -translate-y-1/2 size-5" role="presentation"></i>
+            <input type="search" class="search-input bg-grey rounded-full h-11 w-full indent-12"
+              placeholder="Search for tv, mobile, gadgets">
+          </form>
+        </div>
+        <nav
+          class="main-header__nav flex xl:items-center xl:gap-10 gap-8 transition-transform duration-300 ease-in-out devices:flex-col devices:fixed devices:top-0 devices:right-0 devices:bg-white devices:size-full devices:z-10 devices:py-14 devices:px-5 devices:translate-x-full">
+          <div class="nav-item xl:text-base text-2xl devices:font-medium">
+            <a href="/" class="nav-link hover:text-[#9747ff] transition-colors duration-300 ease-in-out active"
+              aria-label="Link to homepage">Home</a>
+          </div>
+          <div class="nav-item xl:text-base text-2xl devices:font-medium">
+            <a href="/" class="nav-link hover:text-[#9747ff] transition-colors duration-300 ease-in-out"
+              aria-label="Link to categories page">Categories</a>
+          </div>
+          <div class="nav-item xl:text-base text-2xl devices:font-medium">
+            <a href="/" class="nav-link hover:text-[#9747ff] transition-colors duration-300 ease-in-out"
+              aria-label="Link to deals page">Deals</a>
+          </div>
+          <div class="nav-item xl:text-base text-2xl devices:font-medium">
+            <a href="/" class="nav-link hover:text-[#9747ff] transition-colors duration-300 ease-in-out"
+              aria-label="Link to support page">Support</a>
+          </div>
+        </nav>
+        <nav class="main-header__actions flex items-center gap-6 xxl:ms-[8%] lg:ms-5 ms-auto">
+          <div class="action-item flex items-center lg:hidden">
+            <button
+              class="search-toggler hover:scale-110 transition-transform duration-300 ease-in-out will-change-transform"
+              aria-label="toggles search bar">
+              <i data-lucide="search" role="presentation"></i>
+            </button>
+          </div>
+          <div class="action-item flex items-center">
+            <button
+              class="mini-cart-toggler hover:scale-110 transition-transform duration-300 ease-in-out will-change-transform"
+              aria-label="toggles shopping minicart">
+              <i data-lucide="shopping-cart" role="presentation"></i>
+            </button>
+          </div>
+          <div class="action-item flex items-center">
+            <button
+              class="account-toggler hover:scale-110 transition-transform duration-300 ease-in-out will-change-transform"
+              aria-label="toggles account menu">
+              <i data-lucide="user" role="presentation"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <button class="hamburger absolute top-1/2 right-4 -translate-y-1/2 z-10 xl:hidden">
+        <span class="w-8 h-1 bg-black rounded-md block mb-1.5"></span>
+        <span class="w-8 h-1 bg-black rounded-md block mb-1.5"></span>
+        <span class="w-8 h-1 bg-black rounded-md block mb-"></span>
+      </button>
+    </div>
+  </header>
+  <!-- Landmark: Main -->
+  <main class="homepage">
+    <!-- Section: Banner -->
+    <section class="section-banner">
+      <div class="container">
+        <div class="flex flex-wrap md:gap-y-5 gap-y-3">
+          <div class="flex-[0_0_100%] max-w-full">
+            <div class="banner-card rounded-3xl overflow-hidden relative">
+              <figure class="banner-image xs:h-[300px]">
+                <img src="/images/banner/banner-1.png"
+                  alt="A person wearing a white over-ear headphone and listening to music"
+                  class="xl:aspect-[874/329] lg:aspect-[874/380] md:aspect-[874/440] aspect-[874/490] size-full object-cover">
+              </figure>
+              <div
+                class="banner-card__content text-white absolute top-0 left-0 xl:max-w-[700px] lg:max-w-[500px] max-w-[350px] h-full flex flex-col md:justify-start justify-center md:p-10 p-8 md:pt-20">
+                <h1 class="title ttl xl:text-[2.8em]  lg:text-[2.4rem] text-[1.8rem] leading-tight">
+                  Your New Favorite Headphones Reimagined.
+                </h1>
+                <p class="description leading-tight mt-4 para text-lg font-light">More Music, Less Noise</p>
+                <a href="/" class="btn btn-white btn-capsule md:mt-10 mt-5"
+                  aria-label="Buy Now - Link to the product listing page of headphones">
+                  <span class="btn-text">Buy Now</span>
+                  <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                </a>
+              </div>
+              <div
+                class="banner-card__boxedContent text-white bg-[#8c8c8c80] backdrop-blur-sm absolute bottom-5 right-5 rounded-2xl max-w-[260px] p-4 lg:block hidden">
+                <div class="count text-5xl font-medium">120+</div>
+                <p class="description text-sm font-light leading-snug mt-2">More than 120 customers have bought this
+                  product
+                  in last 5
+                  minutes</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-[0_0_100%] max-w-full">
+            <div class="flex md:-mx-[10px] -mx-1.5 flex-wrap md:gap-y-[20px] gap-y-3">
+              <div
+                class="lg:flex-[0_0_26%] lg:max-w-[26%] flex-[0_0_50%] max-w-[50%] md:px-[10px] px-1.5 flex flex-col">
+                <div class="banner-card h-full rounded-3xl overflow-hidden relative group">
+                  <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of audio"></a>
+                  <div
+                    class="absolute top-4 right-4 group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out bg-[#ffffff90] backdrop-blur-[2px] rounded-full size-9 flex justify-center items-center">
+                    <i data-lucide="move-up-right" class="size-5" role="presentation"></i>
+                  </div>
+                  <figure class="banner-image size-full">
+                    <img src="/images/banner/banner-2.png" alt="A white over-ear headphone"
+                      class="aspect-[667/817] size-full object-cover">
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="lg:flex-[0_0_26%] lg:max-w-[26%] flex-[0_0_50%] max-w-[50%] md:px-[10px] px-1.5 flex flex-col">
+                <div
+                  class="banner-card__text xxl:text-[1.41rem] xl:text-[1.2rem] lg:text-base md:text-[1.6rem] text-base font-regular leading-tight px-2 pb-5">
+                  All new 158MP camera.
+                  For breathtaking Pictures
+                </div>
+                <div class="banner-card h-full rounded-3xl overflow-hidden relative group">
+                  <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of cameras"></a>
+                  <div
+                    class="absolute top-4 right-4 group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out bg-[#ffffff90] backdrop-blur-[2px] rounded-full size-9 flex justify-center items-center">
+                    <i data-lucide="move-up-right" class="size-5" role="presentation"></i>
+                  </div>
+                  <figure class="banner-image size-full">
+                    <img src="/images/banner/banner-3.png" alt="A DSLR camera tilted 45 degrees to the right"
+                      class="aspect-[629/736] size-full object-cover">
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="lg:flex-[0_0_48%] lg:max-w-[48%] flex-[0_0_100%] max-w-[100%] md:px-[10px] px-1.5 flex flex-col">
+                <div class="banner-card h-full rounded-3xl overflow-hidden relative group">
+                  <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of mobile"></a>
+                  <div
+                    class="absolute top-4 right-4 group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out bg-[#ffffff90] backdrop-blur-[2px] rounded-full size-9 flex justify-center items-center">
+                    <i data-lucide="move-up-right" class="size-5" role="presentation"></i>
+                  </div>
+                  <figure class="banner-image size-full">
+                    <img src="/images/banner/banner-4.png" alt="A mobile phonefloating over a floating cloth"
+                      class="aspect-[1000/667] size-full object-cover">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Top Categories -->
+    <section class="section-top-categories lg:pt-20 lg:pb-14 pt-10 pb-5">
+      <div class="container">
+        <h2 class="section-title ttl lg:text-4xl text-3xl leading-snug lg:mb-8 mb-5 font-semibold text-center">
+          Select from our top categories
+        </h2>
+        <div class="top-categories__tab">
+          <nav class="top-categories__tab--nav flex justify-center">
+            <ul class="tab-list flex items-center lg:gap-12 gap-7 overflow-auto no-scrollbar"
+              style="--tab-active-width: 68.43px; --tab-active-left: 0;">
+              <li class="tab-list__item tab-active">
+                <button class="tab-button whitespace-nowrap" data-tab="tab-discover"
+                  aria-label="opens the discover tab">Discover</button>
+              </li>
+              <li class="tab-list__item">
+                <button class="tab-button whitespace-nowrap" data-tab="tab-mobile"
+                  aria-label="opens the mobile tab">Mobile</button>
+              </li>
+              <li class="tab-list__item">
+                <button class="tab-button whitespace-nowrap" data-tab="tab-laptop"
+                  aria-label="opens the laptop tab">Laptop</button>
+              </li>
+              <li class="tab-list__item">
+                <button class="tab-button whitespace-nowrap" data-tab="tab-audio"
+                  aria-label="opens the audio tab">Audio</button>
+              </li>
+              <li class="tab-list__item">
+                <button class="tab-button whitespace-nowrap" data-tab="tab-smart-solutions"
+                  aria-label="opens the smart solutions tab">Smart Solutions</button>
+              </li>
+              <li class="tab-list__item">
+                <button class="tab-button whitespace-nowrap" data-tab="tab-accessories"
+                  aria-label="opens the accessories tab">Accessories</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="top-categories__tab--body lg:mt-12 mt-8">
+            <!-- Tab: Discover -->
+            <div class="tab-content tab-active" id="tab-discover">
+              <div class="flex flex-wrap xs:gap-2.5">
+                <div
+                  class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-1.png"
+                        alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
+                        class="aspect-[667/1000] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Gadgets
+                    </div>
+                    <a href="/" aria-label="Link to the category page of gadgets"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Shop Now
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-2.png"
+                        alt="An air purifier showing 48% reading in the display infront of a money plant"
+                        class="aspect-[640/460] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Purifiers
+                    </div>
+                    <a href="/" aria-label="Link to the category page of purifiers"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Explore
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                  <div class="category-text px-5 pt-5 lg:block hidden">
+                    <div
+                      class="xxl:text-[3.7rem] xl:text-[3.15rem] text-[2.7rem] font-regular leading-[1.2] text-grey-800">
+                      Electrify Your Shopping Experience!
+                      <span class="text-black">Shop Now.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 md:flex-[0_0_35%] md:max-w-[35%] flex-[0_0_100%] max-w-[100%]">
+                  <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of sound"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-3.png" alt="A white speaker"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Sound
+                      </div>
+                    </div>
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]"
+                        aria-label="Link to the category page of appliances"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-4.png"
+                          alt="A large wall mounted TV in a room with furnitures"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Appliances
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab: Mobile -->
+            <div class="tab-content" id="tab-mobile">
+              <div class="flex flex-wrap xs:gap-2.5">
+                <div
+                  class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-1.png"
+                        alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
+                        class="aspect-[667/1000] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Mobile
+                    </div>
+                    <a href="/" aria-label="Link to the category page of mobile"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Shop Now
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-2.png"
+                        alt="An air purifier showing 48% reading in the display infront of a money plant"
+                        class="aspect-[640/460] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Mobile
+                    </div>
+                    <a href="/" aria-label="Link to the category page of mobile"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Explore
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                  <div class="category-text px-5 pt-5 lg:block hidden">
+                    <div
+                      class="xxl:text-[3.7rem] xl:text-[3.15rem] text-[2.7rem] font-regular leading-[1.2] text-grey-800">
+                      Electrify Your Shopping Experience!
+                      <span class="text-black">Shop Now.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 md:flex-[0_0_35%] md:max-w-[35%] flex-[0_0_100%] max-w-[100%]">
+                  <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of mobile"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-3.png" alt="A white speaker"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Mobile
+                      </div>
+                    </div>
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of mobile"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-4.png"
+                          alt="A large wall mounted TV in a room with furnitures"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Mobile
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab: Laptop -->
+            <div class="tab-content" id="tab-laptop">
+              <div class="flex flex-wrap xs:gap-2.5">
+                <div
+                  class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-1.png"
+                        alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
+                        class="aspect-[667/1000] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Laptop
+                    </div>
+                    <a href="/" aria-label="Link to the category page of laptop"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Shop Now
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-2.png"
+                        alt="An air purifier showing 48% reading in the display infront of a money plant"
+                        class="aspect-[640/460] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Laptop
+                    </div>
+                    <a href="/" aria-label="Link to the category page of laptop"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Explore
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                  <div class="category-text px-5 pt-5 lg:block hidden">
+                    <div
+                      class="xxl:text-[3.7rem] xl:text-[3.15rem] text-[2.7rem] font-regular leading-[1.2] text-grey-800">
+                      Electrify Your Shopping Experience!
+                      <span class="text-black">Shop Now.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 md:flex-[0_0_35%] md:max-w-[35%] flex-[0_0_100%] max-w-[100%]">
+                  <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of laptop"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-3.png" alt="A white speaker"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Laptop
+                      </div>
+                    </div>
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of laptop"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-4.png"
+                          alt="A large wall mounted TV in a room with furnitures"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Laptop
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab: Audio -->
+            <div class="tab-content" id="tab-audio">
+              <div class="flex flex-wrap xs:gap-2.5">
+                <div
+                  class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-1.png"
+                        alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
+                        class="aspect-[667/1000] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Audio
+                    </div>
+                    <a href="/" aria-label="Link to the category page of audio"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Shop Now
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-2.png"
+                        alt="An air purifier showing 48% reading in the display infront of a money plant"
+                        class="aspect-[640/460] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Audio
+                    </div>
+                    <a href="/" aria-label="Link to the category page of audio"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Explore
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                  <div class="category-text px-5 pt-5 lg:block hidden">
+                    <div
+                      class="xxl:text-[3.7rem] xl:text-[3.15rem] text-[2.7rem] font-regular leading-[1.2] text-grey-800">
+                      Electrify Your Shopping Experience!
+                      <span class="text-black">Shop Now.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 md:flex-[0_0_35%] md:max-w-[35%] flex-[0_0_100%] max-w-[100%]">
+                  <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of audio"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-3.png" alt="A white speaker"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Audio
+                      </div>
+                    </div>
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of audio"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-4.png"
+                          alt="A large wall mounted TV in a room with furnitures"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Audio
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab: Smart Solutions -->
+            <div class="tab-content" id="tab-smart-solutions">
+              <div class="flex flex-wrap xs:gap-2.5">
+                <div
+                  class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-1.png"
+                        alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
+                        class="aspect-[667/1000] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Smart Solutions
+                    </div>
+                    <a href="/" aria-label="Link to the category page of smart solutions"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Shop Now
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-2.png"
+                        alt="An air purifier showing 48% reading in the display infront of a money plant"
+                        class="aspect-[640/460] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Smart Solutions
+                    </div>
+                    <a href="/" aria-label="Link to the category page of smart solutions"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Explore
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                  <div class="category-text px-5 pt-5 lg:block hidden">
+                    <div
+                      class="xxl:text-[3.7rem] xl:text-[3.15rem] text-[2.7rem] font-regular leading-[1.2] text-grey-800">
+                      Electrify Your Shopping Experience!
+                      <span class="text-black">Shop Now.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 md:flex-[0_0_35%] md:max-w-[35%] flex-[0_0_100%] max-w-[100%]">
+                  <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]"
+                        aria-label="Link to the category page of smart solutions"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-3.png" alt="A white speaker"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Smart Solutions
+                      </div>
+                    </div>
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]"
+                        aria-label="Link to the category page of smart solutions"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-4.png"
+                          alt="A large wall mounted TV in a room with furnitures"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Smart Solutions
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab: Accessories -->
+            <div class="tab-content" id="tab-accessories">
+              <div class="flex flex-wrap xs:gap-2.5">
+                <div
+                  class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-1.png"
+                        alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
+                        class="aspect-[667/1000] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Accessories
+                    </div>
+                    <a href="/" aria-label="Link to the category page of accessories"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Shop Now
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
+                  <div class="category-card overflow-hidden relative h-full">
+                    <figure class="category-card__image size-full">
+                      <img src="/images/categories/category-2.png"
+                        alt="An air purifier showing 48% reading in the display infront of a money plant"
+                        class="aspect-[640/460] object-cover size-full object-center">
+                    </figure>
+                    <div
+                      class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                      Accessories
+                    </div>
+                    <a href="/" aria-label="Link to the category page of accessories"
+                      class="category-link btn btn-capsule btn-white absolute bottom-5 left-5 !bg-[#ffffff90] hover:!bg-white backdrop-blur-[2px] border-none px-7">
+                      Explore
+                      <i data-lucide="move-up-right" class="size-4" role="presentation"></i>
+                    </a>
+                  </div>
+                  <div class="category-text px-5 pt-5 lg:block hidden">
+                    <div
+                      class="xxl:text-[3.7rem] xl:text-[3.15rem] text-[2.7rem] font-regular leading-[1.2] text-grey-800">
+                      Electrify Your Shopping Experience!
+                      <span class="text-black">Shop Now.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 md:flex-[0_0_35%] md:max-w-[35%] flex-[0_0_100%] max-w-[100%]">
+                  <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]"
+                        aria-label="Link to the category page of accessories"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-3.png" alt="A white speaker"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Accessories
+                      </div>
+                    </div>
+                    <div class="category-card overflow-hidden relative group">
+                      <a href="/" class="absolute inset-0 z-[2]"
+                        aria-label="Link to the category page of accessories"></a>
+                      <figure class="category-card__image size-full">
+                        <img src="/images/categories/category-4.png"
+                          alt="A large wall mounted TV in a room with furnitures"
+                          class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
+                      </figure>
+                      <div
+                        class="category-name uppercase pointer-events-none text-white absolute top-5 left-5 tracking-[0.2em] font-[200]">
+                        Accessories
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Testimonials & Stats -->
+    <section class="section-testimonials-stats lg:pt-14 lg:pb-28 pt-5 pb-10">
+      <div class="container">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-[10%]">
+          <div class="stats-col">
+            <h2 class="ttl text-3xl leading-snug">
+              Our mission is to bringing you the
+              latest in electronics, simplified and
+              delivered with unbeatable value.
+              <span class="text-grey-800">
+                Elevate your tech lifestyle effortlessly
+                with us.
+              </span>
+            </h2>
+            <ul
+              class="stats-list lg:flex lg:flex-wrap lg:gap-20 grid grid-cols-2 gap-10 lg:justify-between lg:mt-20 mt-10">
+              <li class="stats-list__item">
+                <div class="stat-count text-5xl mb-2">10</div>
+                <div class="stat-name text-grey-800 text-lg font-light">Years of existence</div>
+              </li>
+              <li class="stats-list__item">
+                <div class="stat-count text-5xl mb-2">50+</div>
+                <div class="stat-name text-grey-800 text-lg font-light">Countries in service</div>
+              </li>
+              <li class="stats-list__item">
+                <div class="stat-count text-5xl mb-2">24*7</div>
+                <div class="stat-name text-grey-800 text-lg font-light">Customer support</div>
+              </li>
+              <li class="stats-list__item">
+                <div class="stat-count text-5xl mb-2">50k+</div>
+                <div class="stat-name text-grey-800 text-lg font-light">Satisfied customers</div>
+              </li>
+            </ul>
+          </div>
+          <div class="testimonials-col lg:mt-0 mt-10">
+            <div class="swiper testimonials-swiper lg:max-w-[400px] lg:ms-auto">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex items-center gap-4">
+                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                        <img src="/images/testimonials/testimonial-1.png" alt="A male person"
+                          class="size-full object-cover">
+                      </figure>
+                      <div class="author-name font-medium text-xl text-black">Travis</div>
+                    </div>
+                    <p
+                      class="testimonial text-base text-black text-left leading-snug pt-2 mt-2 border-t-2 border-grey-800">
+                      Electronica has exceeded my expectations! The
+                      quality of their electronic gadgets is unmatched,
+                      and the seamless shopping experience made
+                      me a loyal customer.
+                    </p>
+                    <div class="rating text-left mt-1 text-3xl" data-rating="5"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex items-center gap-4">
+                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                        <img src="/images/testimonials/testimonial-2.png" alt="A female person"
+                          class="size-full object-cover">
+                      </figure>
+                      <div class="author-name font-medium text-xl text-black">Diana Alex</div>
+                    </div>
+                    <p
+                      class="testimonial text-base text-black text-left leading-snug pt-2 mt-2 border-t-2 border-grey-800">
+                      I'm blown away by the performance of the
+                      electronic products I purchased from Electronica.
+                      Cutting edge technology meets sleek design -
+                      truly a game changer
+                    </p>
+                    <div class="rating text-left mt-1 text-3xl" data-rating="5"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex items-center gap-4">
+                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                        <img src="/images/testimonials/testimonial-3.png" alt="A male person"
+                          class="size-full object-cover">
+                      </figure>
+                      <div class="author-name font-medium text-xl text-black">Tooms</div>
+                    </div>
+                    <p
+                      class="testimonial text-base text-black text-left leading-snug pt-2 mt-2 border-t-2 border-grey-800">
+                      I'm blown away by the performance of the
+                      electronic products I purchased from Electronica.
+                      Cutting edge technology meets sleek design -
+                      truly a game changer
+                    </p>
+                    <div class="rating text-left mt-1 text-3xl" data-rating="5"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex items-center gap-4">
+                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                        <img src="/images/testimonials/testimonial-1.png" alt="A male person"
+                          class="size-full object-cover">
+                      </figure>
+                      <div class="author-name font-medium text-xl text-black">Travis</div>
+                    </div>
+                    <p
+                      class="testimonial text-base text-black text-left leading-snug pt-2 mt-2 border-t-2 border-grey-800">
+                      Electronica has exceeded my expectations! The
+                      quality of their electronic gadgets is unmatched,
+                      and the seamless shopping experience made
+                      me a loyal customer.
+                    </p>
+                    <div class="rating text-left mt-1 text-3xl" data-rating="5"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex items-center gap-4">
+                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                        <img src="/images/testimonials/testimonial-2.png" alt="A female person"
+                          class="size-full object-cover">
+                      </figure>
+                      <div class="author-name font-medium text-xl text-black">Diana Alex</div>
+                    </div>
+                    <p
+                      class="testimonial text-base text-black text-left leading-snug pt-2 mt-2 border-t-2 border-grey-800">
+                      I'm blown away by the performance of the
+                      electronic products I purchased from Electronica.
+                      Cutting edge technology meets sleek design -
+                      truly a game changer
+                    </p>
+                    <div class="rating text-left mt-1 text-3xl" data-rating="5"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="flex items-center gap-4">
+                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                        <img src="/images/testimonials/testimonial-3.png" alt="A male person"
+                          class="size-full object-cover">
+                      </figure>
+                      <div class="author-name font-medium text-xl text-black">Tooms</div>
+                    </div>
+                    <p
+                      class="testimonial text-base text-black text-left leading-snug pt-2 mt-2 border-t-2 border-grey-800">
+                      I'm blown away by the performance of the
+                      electronic products I purchased from Electronica.
+                      Cutting edge technology meets sleek design -
+                      truly a game changer
+                    </p>
+                    <div class="rating text-left mt-1 text-3xl" data-rating="5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Get Lost -->
+    <section class="section-get-lost h-[550px] relative">
+      <figure class="get-lost__bg absolute inset-0">
+        <img src="/images/get-lost/get-lost-bg.png"
+          alt=" A women wearing white over-ear headphone listening to music and dancing"
+          class="size-full object-cover md:object-center sm:object-right object-[82%]">
+      </figure>
+      <div class="container relative flex items-center h-full md:z-0 z-10">
+        <div class="section-title text-white md:text-[8vw] text-[12vw] font-regular w-full md:text-left text-center">Get
+          Lost...</div>
+      </div>
+      <canvas id="dotCanvas" width="800" height="550"
+        class="absolute md:top-1/2 md:left-0 md:-translate-y-1/2 -translate-y-full top-full left-1/2 md:-translate-x-0 -translate-x-1/2"></canvas>
+    </section>
+
+    <!-- Section: Deals -->
+    <section class="section-deals overflow-hidden lg:pt-14 lg:pb-14 pt-10 pb-5">
+      <div class="container">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="section-title ttl lg:text-4xl text-3xl leading-snug font-semibold ">
+            Deals you can't miss
+          </h2>
+          <div class="flex gap-5">
+            <button class="deals-swiper-prev">
+              <i data-lucide="move-left" role="presentation"></i>
+            </button>
+            <button class="deals-swiper-next">
+              <i data-lucide="move-right" role="presentation"></i>
+            </button>
+          </div>
+        </div>
+        <div class="swiper deals-slider !p-4 -mx-4 !overflow-visible">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card relative group">
+                <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the product page of Watch Series 5"></a>
+                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                  <img src="/images/deals/deal-1.png"
+                    class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
+                    alt="Watch Series 5">
+                </figure>
+                <div class="product-card__details mt-4">
+                  <h3 class="product-name ttl text-lg font-medium leading-tight mb-1.5">Watch Series 5</h3>
+                  <div class="flex gap-3">
+                    <s class="old-price text-grey-900 text-sm">$600</s>
+                    <span class="offer-price text-black text-sm font-semibold">$300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card relative group">
+                <a href="/" class="absolute inset-0 z-[2]"
+                  aria-label="Link to the product page of Electronica Laptop Flip"></a>
+                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                  <img src="/images/deals/deal-2.png"
+                    class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
+                    alt="Electronica Laptop Flip">
+                </figure>
+                <div class="product-card__details mt-4">
+                  <h3 class="product-name ttl text-lg font-medium leading-tight mb-1.5">Electronica Laptop Flip</h3>
+                  <div class="flex gap-3">
+                    <s class="old-price text-grey-900 text-sm">$1200</s>
+                    <span class="offer-price text-black text-sm font-semibold">$800</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card relative group">
+                <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the product page of Apple Laptop"></a>
+                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                  <img src="/images/deals/deal-3.png"
+                    class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
+                    alt="Apple Laptop">
+                </figure>
+                <div class="product-card__details mt-4">
+                  <h3 class="product-name ttl text-lg font-medium leading-tight mb-1.5">Apple Laptop</h3>
+                  <div class="flex gap-3">
+                    <s class="old-price text-grey-900 text-sm">$1200</s>
+                    <span class="offer-price text-black text-sm font-semibold">$900</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card relative group">
+                <a href="/" class="absolute inset-0 z-[2]"
+                  aria-label="Link to the product page of Marshall Speaker"></a>
+                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                  <img src="/images/deals/deal-4.png"
+                    class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
+                    alt="Marshall Speaker">
+                </figure>
+                <div class="product-card__details mt-4">
+                  <h3 class="product-name ttl text-lg font-medium leading-tight mb-1.5">Speaker</h3>
+                  <div class="flex gap-3">
+                    <s class="old-price text-grey-900 text-sm">$1300</s>
+                    <span class="offer-price text-black text-sm font-semibold">$600</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card relative group">
+                <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the product page of Watch Series 5"></a>
+                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                  <img src="/images/deals/deal-1.png"
+                    class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
+                    alt="Watch Series 5">
+                </figure>
+                <div class="product-card__details mt-4">
+                  <h3 class="product-name ttl text-lg font-medium leading-tight mb-1.5">Watch Series 5</h3>
+                  <div class="flex gap-3">
+                    <s class="old-price text-grey-900 text-sm">$600</s>
+                    <span class="offer-price text-black text-sm font-semibold">$300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card relative group">
+                <a href="/" class="absolute inset-0 z-[2]"
+                  aria-label="Link to the product page of Electronica Laptop Flip"></a>
+                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                  <img src="/images/deals/deal-2.png"
+                    class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
+                    alt="Electronica Laptop Flip">
+                </figure>
+                <div class="product-card__details mt-4">
+                  <h3 class="product-name ttl text-lg font-medium leading-tight mb-1.5">Electronica Laptop Flip</h3>
+                  <div class="flex gap-3">
+                    <s class="old-price text-grey-900 text-sm">$1200</s>
+                    <span class="offer-price text-black text-sm font-semibold">$800</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card relative group">
+                <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the product page of Apple Laptop"></a>
+                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                  <img src="/images/deals/deal-3.png"
+                    class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
+                    alt="Apple Laptop">
+                </figure>
+                <div class="product-card__details mt-4">
+                  <h3 class="product-name ttl text-lg font-medium leading-tight mb-1.5">Apple Laptop</h3>
+                  <div class="flex gap-3">
+                    <s class="old-price text-grey-900 text-sm">$1200</s>
+                    <span class="offer-price text-black text-sm font-semibold">$900</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card relative group">
+                <a href="/" class="absolute inset-0 z-[2]"
+                  aria-label="Link to the product page of Marshall Speaker"></a>
+                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                  <img src="/images/deals/deal-4.png"
+                    class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
+                    alt="Marshall Speaker">
+                </figure>
+                <div class="product-card__details mt-4">
+                  <h3 class="product-name ttl text-lg font-medium leading-tight mb-1.5">Speaker</h3>
+                  <div class="flex gap-3">
+                    <s class="old-price text-grey-900 text-sm">$1300</s>
+                    <span class="offer-price text-black text-sm font-semibold">$600</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section: Search -->
+    <section class="section-search lg:pt-14 lg:pb-14 pt-5 pb-10">
+      <div class="container">
+        <h2 class="section-title text-center ttl lg:text-4xl text-3xl leading-snug mb-8 font-semibold">Looking for
+          something else?
+        </h2>
+        <form action="" class="search-form relative max-w-[400px] mx-auto">
+          <i data-lucide="search" class="absolute top-1/2 left-5 -translate-y-1/2 size-5" role="presentation"></i>
+          <input type="search" class="search-input bg-grey rounded-full h-11 w-full indent-12"
+            placeholder="Search for tv, mobile, gadgets" aria-label="search for tv, mobile, gadgets, etc.">
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- Landmark: Footer -->
+  <footer class="main-footer overflow-x-hidden">
+    <div class="main-footer__top bg-black-800 text-white py-14">
+      <div class="container">
+        <div class="main-footer__logo">
+          <img src="/images/main-logo.png" alt="Electronica logo" class="max-w-[200px]">
+        </div>
+        <nav class="main-footer__navlist grid lg:grid-cols-4 grid-cols-2 mobile:grid-cols-1 gap-10 pt-16">
+          <dl class="footer-nav">
+            <dt class="footer-nav__title text-grey-900 sm:mb-8 mb-5">INFORMATION</dt>
+            <dd class="footer-nav__item mb-3">
+              <a href="/" aria-label="Link to about us page"
+                class="nav-item hover:text-[#9747ff] transition-colors duration-300 ease-in-out">
+                About Us
+              </a>
+            </dd>
+            <dd class="footer-nav__item mb-3">
+              <a href="/" aria-label="Link to careers page"
+                class="nav-item hover:text-[#9747ff] transition-colors duration-300 ease-in-out">
+                Careers
+              </a>
+            </dd>
+            <dd class="footer-nav__item mb-3">
+              <a href="/" aria-label="Link to category page"
+                class="nav-item hover:text-[#9747ff] transition-colors duration-300 ease-in-out">
+                Category
+              </a>
+            </dd>
+            <dd class="footer-nav__item">
+              <a href="/" aria-label="Link to FAQs page"
+                class="nav-item hover:text-[#9747ff] transition-colors duration-300 ease-in-out">
+                FAQs
+              </a>
+            </dd>
+          </dl>
+          <dl class="footer-nav">
+            <dt class="footer-nav__title text-grey-900 sm:mb-8 mb-5">LEGAL</dt>
+            <dd class="footer-nav__item mb-3">
+              <a href="/" aria-label="Link to privacy policy page"
+                class="nav-item hover:text-[#9747ff] transition-colors duration-300 ease-in-out">
+                Privacy Policy
+              </a>
+            </dd>
+            <dd class="footer-nav__item">
+              <a href="/" aria-label="Link to terms of use page"
+                class="nav-item hover:text-[#9747ff] transition-colors duration-300 ease-in-out">
+                Terms of Use
+              </a>
+            </dd>
+          </dl>
+          <dl class="footer-nav">
+            <dt class="footer-nav__title text-grey-900 sm:mb-8 mb-5">CONTACT US</dt>
+            <dd class="footer-nav__item mb-3">
+              <a href="tel:919999999999" aria-label="call +91 99999 99999"
+                class="nav-item hover:text-[#9747ff] transition-colors duration-300 ease-in-out flex items-center gap-3">
+                <i data-lucide="phone" class="size-5" role="presentation"></i>
+                <span>91 99999 99999</span>
+              </a>
+            </dd>
+            <dd class="footer-nav__item">
+              <a href="mailto:electronica@gmail.com" aria-label="email to electronica@gmail.com"
+                class="nav-item hover:text-[#9747ff] transition-colors duration-300 ease-in-out flex items-center gap-3">
+                <i data-lucide="mail" class="size-5" role="presentation"></i>
+                <span>electronica@gmail.com</span>
+              </a>
+            </dd>
+          </dl>
+          <div class="footer-connect max-w-[200px] lg:ms-auto">
+            <div class="footer-connect__title text-[2.5rem] leading-tight gradient-text-primary">Let's Connect</div>
+            <ul class="footer-connect__socials flex items-center gap-5 mt-6">
+              <li class="social-item">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                  class="hover:scale-125 transition-transform duration-300 ease-in-out will-change-transform inline-block">
+                  <i data-lucide="facebook" class="size-5" role="presentation"></i>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                  aria-label="link to facebook (opens in new tab)"
+                  class="hover:scale-125 transition-transform duration-300 ease-in-out will-change-transform inline-block">
+                  <i data-lucide="instagram" class="size-5" role="presentation"></i>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                  aria-label="link to linkedin (opens in new tab)"
+                  class="hover:scale-125 transition-transform duration-300 ease-in-out will-change-transform inline-block">
+                  <i data-lucide="linkedin" class="size-6" role="presentation"></i>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                  aria-label="link to twitter (opens in new tab)"
+                  class="hover:scale-125 transition-transform duration-300 ease-in-out will-change-transform inline-block">
+                  <i data-lucide="twitter" class="size-5" role="presentation"></i>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                  aria-label="link to youtube (opens in new tab)"
+                  class="hover:scale-125 transition-transform duration-300 ease-in-out will-change-transform inline-block">
+                  <i data-lucide="youtube" class="size-6" role="presentation"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="main-footer__bottom text-center bg-black-900 text-grey-900 py-3">
+      <div class="container">
+        <div class="copyrights">© Copyright 2024 by Electronica</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
