@@ -35,12 +35,13 @@
 </head>
 
 <body>
+  <a href="#main-content" class="sr-only" aria-label="skip to main content">Skip to main content</a>
   <!-- Landmark: Header -->
   <header class="main-header h-[85px] py-5 flex items-center">
     <div
       class="main-header__mobilesearch h-[85px] transition-transform duration-300 ease-in-out lg:hidden bg-white py-5 absolute top-0 left-0 w-full z-[1024] -translate-y-full">
       <div class="container">
-        <form action="" class="search-form relative">
+        <form action="" class="search-form relative" role="search">
           <i data-lucide="search" class="absolute top-1/2 left-5 -translate-y-1/2 size-5" role="presentation"></i>
           <input type="search" class="search-input bg-grey rounded-full h-11 w-full indent-12"
             aria-label="Search for tv, mobile, gadgets, etc." placeholder="Search for tv, mobile, gadgets">
@@ -116,14 +117,14 @@
     </div>
   </header>
   <!-- Landmark: Main -->
-  <main class="homepage">
+  <main class="homepage" id="main-content">
     <!-- Section: Banner -->
     <section class="section-banner">
       <div class="container">
         <div class="flex flex-wrap md:gap-y-5 gap-y-3">
           <div class="flex-[0_0_100%] max-w-full">
             <div class="banner-card rounded-3xl overflow-hidden relative">
-              <figure class="banner-image xs:h-[300px]">
+              <figure role="presentation" class="banner-image xs:h-[300px]">
                 <img src="/images/banner/banner-1.webp"
                   alt="A person wearing a white over-ear headphone and listening to music"
                   class="xl:aspect-[874/329] lg:aspect-[874/380] md:aspect-[874/440] aspect-[874/490] size-full object-cover">
@@ -150,7 +151,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-[0_0_100%] max-w-full">
+          <div class="flex-[0_0_100%] max-w-full section-banner__bottom">
             <div class="flex md:-mx-[10px] -mx-1.5 flex-wrap md:gap-y-[20px] gap-y-3">
               <div
                 class="lg:flex-[0_0_26%] lg:max-w-[26%] flex-[0_0_50%] max-w-[50%] md:px-[10px] px-1.5 flex flex-col">
@@ -160,7 +161,7 @@
                     class="absolute top-4 right-4 group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out bg-[#ffffff90] backdrop-blur-[2px] rounded-full size-9 flex justify-center items-center">
                     <i data-lucide="move-up-right" class="size-5" role="presentation"></i>
                   </div>
-                  <figure class="banner-image size-full">
+                  <figure role="presentation" class="banner-image size-full">
                     <img src="/images/banner/banner-2.webp" alt="A white over-ear headphone"
                       class="aspect-[667/817] size-full object-cover">
                   </figure>
@@ -179,7 +180,7 @@
                     class="absolute top-4 right-4 group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out bg-[#ffffff90] backdrop-blur-[2px] rounded-full size-9 flex justify-center items-center">
                     <i data-lucide="move-up-right" class="size-5" role="presentation"></i>
                   </div>
-                  <figure class="banner-image size-full">
+                  <figure role="presentation" class="banner-image size-full">
                     <img src="/images/banner/banner-3.webp" alt="A DSLR camera tilted 45 degrees to the right"
                       class="aspect-[629/736] size-full object-cover">
                   </figure>
@@ -193,7 +194,7 @@
                     class="absolute top-4 right-4 group-hover:scale-110 will-change-transform transition-transform duration-300 ease-in-out bg-[#ffffff90] backdrop-blur-[2px] rounded-full size-9 flex justify-center items-center">
                     <i data-lucide="move-up-right" class="size-5" role="presentation"></i>
                   </div>
-                  <figure class="banner-image size-full">
+                  <figure role="presentation" class="banner-image size-full">
                     <img src="/images/banner/banner-4.webp" alt="A mobile phonefloating over a floating cloth"
                       class="aspect-[1000/667] size-full object-cover">
                   </figure>
@@ -248,7 +249,7 @@
                 <div
                   class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-1.webp"
                         alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
                         class="aspect-[667/1000] object-cover size-full object-center">
@@ -267,7 +268,7 @@
                 <div
                   class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-2.webp"
                         alt="An air purifier showing 48% reading in the display infront of a money plant"
                         class="aspect-[640/460] object-cover size-full object-center">
@@ -294,7 +295,7 @@
                   <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of sound"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-3.webp" alt="A white speaker"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
                       </figure>
@@ -306,7 +307,7 @@
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]"
                         aria-label="Link to the category page of appliances"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-4.webp"
                           alt="A large wall mounted TV in a room with furnitures"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -326,7 +327,7 @@
                 <div
                   class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-1.webp"
                         alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
                         class="aspect-[667/1000] object-cover size-full object-center">
@@ -345,7 +346,7 @@
                 <div
                   class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-2.webp"
                         alt="An air purifier showing 48% reading in the display infront of a money plant"
                         class="aspect-[640/460] object-cover size-full object-center">
@@ -372,7 +373,7 @@
                   <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of mobile"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-3.webp" alt="A white speaker"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
                       </figure>
@@ -383,7 +384,7 @@
                     </div>
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of mobile"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-4.webp"
                           alt="A large wall mounted TV in a room with furnitures"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -403,7 +404,7 @@
                 <div
                   class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-1.webp"
                         alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
                         class="aspect-[667/1000] object-cover size-full object-center">
@@ -422,7 +423,7 @@
                 <div
                   class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-2.webp"
                         alt="An air purifier showing 48% reading in the display infront of a money plant"
                         class="aspect-[640/460] object-cover size-full object-center">
@@ -449,7 +450,7 @@
                   <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of laptop"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-3.webp" alt="A white speaker"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
                       </figure>
@@ -460,7 +461,7 @@
                     </div>
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of laptop"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-4.webp"
                           alt="A large wall mounted TV in a room with furnitures"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -480,7 +481,7 @@
                 <div
                   class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-1.webp"
                         alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
                         class="aspect-[667/1000] object-cover size-full object-center">
@@ -499,7 +500,7 @@
                 <div
                   class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-2.webp"
                         alt="An air purifier showing 48% reading in the display infront of a money plant"
                         class="aspect-[640/460] object-cover size-full object-center">
@@ -526,7 +527,7 @@
                   <div class="grid grid-rows-2 xxl:h-[620px] xl:h-[550px] h-[500px] xs:gap-2.5">
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of audio"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-3.webp" alt="A white speaker"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
                       </figure>
@@ -537,7 +538,7 @@
                     </div>
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the category page of audio"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-4.webp"
                           alt="A large wall mounted TV in a room with furnitures"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -557,7 +558,7 @@
                 <div
                   class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-1.webp"
                         alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
                         class="aspect-[667/1000] object-cover size-full object-center">
@@ -576,7 +577,7 @@
                 <div
                   class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-2.webp"
                         alt="An air purifier showing 48% reading in the display infront of a money plant"
                         class="aspect-[640/460] object-cover size-full object-center">
@@ -604,7 +605,7 @@
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]"
                         aria-label="Link to the category page of smart solutions"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-3.webp" alt="A white speaker"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
                       </figure>
@@ -616,7 +617,7 @@
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]"
                         aria-label="Link to the category page of smart solutions"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-4.webp"
                           alt="A large wall mounted TV in a room with furnitures"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -636,7 +637,7 @@
                 <div
                   class="col-1 xxl:h-[620px] xl:h-[550px] md:h-[500px] h-[250px] md:flex-[0_0_35%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[35%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-1.webp"
                         alt="A robotic vaccum cleaner and a man sitting on a sofa in the background"
                         class="aspect-[667/1000] object-cover size-full object-center">
@@ -655,7 +656,7 @@
                 <div
                   class="col-2 xxl:h-[260px] xl:h-[235px] lg:h-[220px] md:h-[500px] h-[250px] md:flex-[0_0_30%] sm:flex-[0_0_50%] flex-[0_0_100%] md:max-w-[30%] sm:max-w-[50%] max-w-[100%]">
                   <div class="category-card overflow-hidden relative h-full">
-                    <figure class="category-card__image size-full">
+                    <figure role="presentation" class="category-card__image size-full">
                       <img src="/images/categories/category-2.webp"
                         alt="An air purifier showing 48% reading in the display infront of a money plant"
                         class="aspect-[640/460] object-cover size-full object-center">
@@ -683,7 +684,7 @@
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]"
                         aria-label="Link to the category page of accessories"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-3.webp" alt="A white speaker"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
                       </figure>
@@ -695,7 +696,7 @@
                     <div class="category-card overflow-hidden relative group">
                       <a href="/" class="absolute inset-0 z-[2]"
                         aria-label="Link to the category page of accessories"></a>
-                      <figure class="category-card__image size-full">
+                      <figure role="presentation" class="category-card__image size-full">
                         <img src="/images/categories/category-4.webp"
                           alt="A large wall mounted TV in a room with furnitures"
                           class="aspect-square object-cover size-full object-center group-hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -754,7 +755,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-card">
                     <div class="flex items-center gap-4">
-                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                      <figure role="presentation" class="author-image rounded-full size-16 overflow-hidden">
                         <img src="/images/testimonials/testimonial-1.webp" alt="A male person"
                           class="size-full object-cover">
                       </figure>
@@ -773,7 +774,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-card">
                     <div class="flex items-center gap-4">
-                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                      <figure role="presentation" class="author-image rounded-full size-16 overflow-hidden">
                         <img src="/images/testimonials/testimonial-2.webp" alt="A female person"
                           class="size-full object-cover">
                       </figure>
@@ -792,7 +793,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-card">
                     <div class="flex items-center gap-4">
-                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                      <figure role="presentation" class="author-image rounded-full size-16 overflow-hidden">
                         <img src="/images/testimonials/testimonial-3.webp" alt="A male person"
                           class="size-full object-cover">
                       </figure>
@@ -811,7 +812,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-card">
                     <div class="flex items-center gap-4">
-                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                      <figure role="presentation" class="author-image rounded-full size-16 overflow-hidden">
                         <img src="/images/testimonials/testimonial-1.webp" alt="A male person"
                           class="size-full object-cover">
                       </figure>
@@ -830,7 +831,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-card">
                     <div class="flex items-center gap-4">
-                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                      <figure role="presentation" class="author-image rounded-full size-16 overflow-hidden">
                         <img src="/images/testimonials/testimonial-2.webp" alt="A female person"
                           class="size-full object-cover">
                       </figure>
@@ -849,7 +850,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-card">
                     <div class="flex items-center gap-4">
-                      <figure class="author-image rounded-full size-16 overflow-hidden">
+                      <figure role="presentation" class="author-image rounded-full size-16 overflow-hidden">
                         <img src="/images/testimonials/testimonial-3.webp" alt="A male person"
                           class="size-full object-cover">
                       </figure>
@@ -874,7 +875,7 @@
 
     <!-- Section: Get Lost -->
     <section class="section-get-lost h-[550px] relative">
-      <figure class="get-lost__bg absolute inset-0">
+      <figure role="presentation" class="get-lost__bg absolute inset-0">
         <img src="/images/get-lost/get-lost-bg.webp"
           alt=" A women wearing white over-ear headphone listening to music and dancing"
           class="size-full object-cover md:object-center sm:object-right object-[82%]">
@@ -908,7 +909,7 @@
             <div class="swiper-slide">
               <div class="product-card relative group">
                 <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the product page of Watch Series 5"></a>
-                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                <figure role="presentation" class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
                   <img src="/images/deals/deal-1.webp"
                     class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
                     alt="Watch Series 5">
@@ -926,7 +927,7 @@
               <div class="product-card relative group">
                 <a href="/" class="absolute inset-0 z-[2]"
                   aria-label="Link to the product page of Electronica Laptop Flip"></a>
-                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                <figure role="presentation" class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
                   <img src="/images/deals/deal-2.webp"
                     class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
                     alt="Electronica Laptop Flip">
@@ -943,7 +944,7 @@
             <div class="swiper-slide">
               <div class="product-card relative group">
                 <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the product page of Apple Laptop"></a>
-                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                <figure role="presentation" class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
                   <img src="/images/deals/deal-3.webp"
                     class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
                     alt="Apple Laptop">
@@ -961,7 +962,7 @@
               <div class="product-card relative group">
                 <a href="/" class="absolute inset-0 z-[2]"
                   aria-label="Link to the product page of Marshall Speaker"></a>
-                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                <figure role="presentation" class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
                   <img src="/images/deals/deal-4.webp"
                     class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
                     alt="Marshall Speaker">
@@ -978,7 +979,7 @@
             <div class="swiper-slide">
               <div class="product-card relative group">
                 <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the product page of Watch Series 5"></a>
-                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                <figure role="presentation" class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
                   <img src="/images/deals/deal-1.webp"
                     class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
                     alt="Watch Series 5">
@@ -996,7 +997,7 @@
               <div class="product-card relative group">
                 <a href="/" class="absolute inset-0 z-[2]"
                   aria-label="Link to the product page of Electronica Laptop Flip"></a>
-                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                <figure role="presentation" class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
                   <img src="/images/deals/deal-2.webp"
                     class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
                     alt="Electronica Laptop Flip">
@@ -1013,7 +1014,7 @@
             <div class="swiper-slide">
               <div class="product-card relative group">
                 <a href="/" class="absolute inset-0 z-[2]" aria-label="Link to the product page of Apple Laptop"></a>
-                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                <figure role="presentation" class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
                   <img src="/images/deals/deal-3.webp"
                     class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
                     alt="Apple Laptop">
@@ -1031,7 +1032,7 @@
               <div class="product-card relative group">
                 <a href="/" class="absolute inset-0 z-[2]"
                   aria-label="Link to the product page of Marshall Speaker"></a>
-                <figure class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
+                <figure role="presentation" class="product-card__image overflow-hidden shadow-[0_0_12px_1px_#f1f1f1]">
                   <img src="/images/deals/deal-4.webp"
                     class="group-hover:scale-105 transition-transform duration-300 ease-in-out will-change-transform"
                     alt="Marshall Speaker">
@@ -1057,7 +1058,7 @@
         <h2 class="section-title text-center ttl lg:text-4xl text-3xl leading-snug mb-8 font-semibold">Looking for
           something else?
         </h2>
-        <form action="" class="search-form relative max-w-[400px] mx-auto">
+        <form action="" class="search-form relative max-w-[400px] mx-auto" role="search">
           <i data-lucide="search" class="absolute top-1/2 left-5 -translate-y-1/2 size-5" role="presentation"></i>
           <input type="search" class="search-input bg-grey rounded-full h-11 w-full indent-12"
             placeholder="Search for tv, mobile, gadgets" aria-label="search for tv, mobile, gadgets, etc.">

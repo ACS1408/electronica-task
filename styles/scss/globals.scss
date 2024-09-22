@@ -297,3 +297,21 @@ body {
     }
   }
 }
+
+// accessibility
+.section-banner__bottom {
+  .banner-card {
+    &:focus-within {
+      outline: 2px solid #000;
+      outline-offset: 4px;
+    }
+  }
+}
+.category-card {
+  &.group {
+    &:focus-within {
+      outline: 2px solid #000;
+      outline-offset: 4px;
+    }
+  }
+}
