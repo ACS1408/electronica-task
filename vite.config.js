@@ -3,9 +3,9 @@ import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig({
   base: "./",
-//   build: {
-//     chunkSizeWarningLimit: 1024 * 1024, // 1 MB (default is 500 kB)
-//   },
+  build: {
+    chunkSizeWarningLimit: 1024 * 1024, // 1 MB (default is 500 kB)
+  },
   plugins: [
     ViteImageOptimizer({
       jpeg: {
