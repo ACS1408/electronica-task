@@ -13,8 +13,8 @@ const height = canvas.height;
 const barWidth = 8; // Width of each bar
 const maxBarHeight = height / 2.3; // Maximum height of the visualizer bars
 const dotSpacing = 8; // Space between dots within a bar
-const waveFrequency = 4; // Frequency of the waveform
-const waveAmplitude = 180; // Amplitude of the waveform
+let waveFrequency = 4; // Frequency of the waveform
+let waveAmplitude = 180; // Amplitude of the waveform
 
 // Create the dot visualizer effect
 const createVisualizerDots = () => {
@@ -53,4 +53,13 @@ const createVisualizerDots = () => {
   }
 };
 
-export default createVisualizerDots;
+// Animate the visualizer by modifying wave properties over time
+const animateVisualizer = () => {
+  waveFrequency += 0.00008; // Slower change in frequency
+  waveAmplitude = 180 + 50 * Math.sin(Date.now() / 2000); // Slower amplitude change
+
+  createVisualizerDots(); // Redraw the dots with updated values
+  requestAnimationFrame(animateVisualizer); // Continue the animation
+};
+
+export default animateVisualizer;

@@ -6,6 +6,7 @@ import Swiper from "swiper/bundle";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import statsAnimation from "./modules/statsAnimation";
 
 (() => {
   createIcons({ icons });
@@ -66,6 +67,7 @@ import "swiper/css/navigation";
     document.body.classList.remove("show-search");
   });
 
+  statsAnimation();
   categoryTab();
   createRating();
   createVisualizerDots();

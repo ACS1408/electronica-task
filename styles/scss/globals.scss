@@ -142,15 +142,32 @@
 
 @layer utilities {
   .gradient-text-primary {
-    background: linear-gradient(100deg, #9747ff, #ffffff);
+    background: linear-gradient(
+      100deg,
+      #ffffff 0%,
+      #9747ff 50%,
+      #ffffff 80%,
+      #9747ff 100%
+    );
     color: #ffffff;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    animation: gradientAnim 2s ease infinite alternate;
   }
   .no-scrollbar {
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+}
+@keyframes gradientAnim {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0%;
   }
 }
 
